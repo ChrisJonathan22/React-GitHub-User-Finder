@@ -1,0 +1,19 @@
+.menu-background {
+    background-color: #363636 !important;
+
+    .menu-items {
+        color: #B9B9B9 !important;
+        text-transform: none !important;
+        text-decoration: none;
+        margin: 10px;
+    }
+    
+    .logo {
+        height: 40px;
+    }
+    
+    .right {
+        position: absolute;
+        right: 10px;
+    }
+}
