@@ -1,34 +1,29 @@
-import React , { Component } from 'react';
+import React from 'react';
 import './Header.scss';
-import {AppBar, Toolbar, Button} from '@material-ui/core';
+import { AppBar, Toolbar } from '@material-ui/core';
 import GitHubLogo from '../../Assets/GitHub-Mark-Light-64px.png';
-import { Link } from "@reach/router"
-import { BrowserRouter as Router, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
-export default class Header extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
+function Header () {
+ 
         return (
             <div>
                 <AppBar position='static' className='menu-background'>
                     <Toolbar>
                         <div className='logo-container'>
-                            <img className='logo' src={GitHubLogo} />
+                            <Link className='menu-items' to='/'>
+                                <img className='logo' src={GitHubLogo} alt='GitHub logo' />
+                            </Link>
                         </div>
                         <div className='right'>
-                            {/* <Link to='/repos'>Repos</Link> */}
-                            <Router>
-                                <NavLink className='menu-items' exact to ='/repos'>Search Repos</NavLink>
-                                <NavLink className='menu-items' exact to ='/orgs'>Search Organisations</NavLink>
-                            </Router>
+                            <Link className='menu-items' to='/repos'>Search Repos</Link>
+                            <Link className='menu-items' to='/orgs'>Search Organisations</Link>
                         </div>
                     </Toolbar>
                 </AppBar>
             </div>
         );
     }
-}
+
+    export default Header;

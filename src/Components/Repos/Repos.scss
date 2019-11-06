@@ -1,0 +1,34 @@
+#repos-container {
+    width: 600px !important;
+    margin: 0 auto;
+
+    @media screen and (max-width: 680px) {
+        width: auto !important;
+    }
+}
+
+#repo-label {
+    display: block;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+#repo-input {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+#repo-button {
+    border: 0;
+    background-color: #363636;
+    color: #f1f1f1;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+#repo-cards {
+    margin: 10px 0;
+}
