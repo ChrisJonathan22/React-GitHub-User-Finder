@@ -2,6 +2,10 @@
   "name": "react-github-user-finder",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.9.0",
+    "node": "10.16.3"
+  },
   "dependencies": {
     "@material-ui/core": "^4.5.2",
     "@reach/router": "^1.2.1",
