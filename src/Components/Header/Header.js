@@ -6,24 +6,23 @@ import { Link } from 'react-router-dom';
 
 
 function Header () {
- 
-        return (
-            <div>
-                <AppBar position='static' className='menu-background'>
-                    <Toolbar>
-                        <div className='logo-container'>
-                            <Link className='menu-items' to='/'>
-                                <img className='logo' src={GitHubLogo} alt='GitHub logo' />
-                            </Link>
-                        </div>
-                        <div className='right'>
-                            <Link className='menu-items' to='/repos'>Search Repos</Link>
-                            <Link className='menu-items' to='/orgs'>Search Organisations</Link>
-                        </div>
-                    </Toolbar>
-                </AppBar>
-            </div>
-        );
-    }
+    return (
+        <div>
+            <AppBar position='static' className='menu-background'>
+                <Toolbar>
+                    <div className='logo-container'>
+                        <Link className='menu-items' to='/'>
+                            <img className='logo' src={GitHubLogo} alt='GitHub logo' />
+                        </Link>
+                    </div>
+                    <div className='right'>
+                        <Link className='menu-items' to='/repos'>Search Repos</Link>
+                        <Link className='menu-items' to='/orgs'>Search Organisations</Link>
+                    </div>
+                </Toolbar>
+            </AppBar>
+        </div>
+    );
+}
 
-    export default Header;
+export default Header;
